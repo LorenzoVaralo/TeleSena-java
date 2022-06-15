@@ -6,7 +6,6 @@ public class TeleSena{
         
     }
     
-    
     private static boolean check(int[] array, int compare){
         //retorna true se o valor "compare" esta presente no array "array"
         // se nao retorna false
@@ -33,11 +32,12 @@ public class TeleSena{
     }
     
     public static int[][] criarTele(int numConjuntos, int tamanho, int maxNum){
+        Utils u = new Utils();
         
         int[][] tele = new int[numConjuntos][tamanho];
         
         for (int i=0; i<numConjuntos; i++){
-            tele[i] = sortear(tamanho, maxNum);
+            tele[i] = u.sortear(tamanho, maxNum);
             Arrays.sort(tele[i]);
         }
 
