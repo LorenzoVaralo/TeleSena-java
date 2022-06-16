@@ -35,4 +35,10 @@ public class Utils{
         }
         return true;
     }
+    
+    public void sleep(int mlsecs){
+        try{
+            Thread.sleep(mlsecs/10);
+        } catch(Exception e) {}
+    }
 }

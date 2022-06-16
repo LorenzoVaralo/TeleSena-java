@@ -1,8 +1,10 @@
 import java.util.Arrays;
 
 public class TeleSena{
+    final double valVenda;
+    
     public TeleSena(){
-        final double valVenda = 10.0;
+        valVenda = 10.0;
         
     }
     
@@ -42,6 +44,10 @@ public class TeleSena{
         }
 
         return tele;
+    }
+    
+    public double getValVenda(){
+        return this.valVenda;
     }
     
     public static void main(String[] args){

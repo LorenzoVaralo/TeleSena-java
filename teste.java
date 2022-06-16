@@ -7,13 +7,31 @@ import java.util.*;
  */
 public class teste{
     public static void main(String[] args){
-        Utils u = new Utils();
+        int rand = -1;
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        int d = 0;
         
-        int[] a = new int[] {1,2,3,4,5,34};
-        int[] b = new int[] {1,5,2,3,7,4,9};
+        System.out.println("\n\n\n");
         
-        System.out.println(u.estaEm(a, b));
-        
-        System.out.println(Arrays.toString(Arrays.copyOfRange(b, 0, 4)));
-    }
+        for(int i =0; i<1000; i++){
+            rand = (int) (Math.random()*4);
+            if(rand == 0)
+                a += 1;
+            else if(rand == 1)
+                b += 1;
+            else if(rand == 2)
+                c += 1;
+            else if(rand == 3)
+                d += 1;
+            else
+                System.out.println("ERROOOOO, deu "+rand);
+            }
+                
+        System.out.println("a: "+a);
+        System.out.println("b: "+b);
+        System.out.println("c: "+c);
+        System.out.println("d: "+d);
+    }           
 }

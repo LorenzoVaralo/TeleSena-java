@@ -9,6 +9,7 @@ public class Pessoa{
     String nome;
     int numTeles;
     int valPrem;
+    boolean ganhador;
     int[][][] teles;
     
     int numConjuntos = ControleTeleSena.numConjuntos;
@@ -19,6 +20,7 @@ public class Pessoa{
         this.nome = nome;
         this.numTeles = numTeles;
         this.valPrem = valPrem;
+        this.ganhador = false;
         
         teles = new int[numTeles][numConjuntos][tamanhoTele];
         
@@ -33,6 +35,14 @@ public class Pessoa{
     
     public String getNome(){
         return this.nome;
+    }
+    
+    public boolean getGanhador(){
+        return this.ganhador;
+    }
+    
+    public void setGanhador(boolean ganhador){
+        this.ganhador = ganhador;
     }
     ///public static void main(String[] args){
     ///    Pessoa josee = new Pessoa("jose", 7, 89769);
